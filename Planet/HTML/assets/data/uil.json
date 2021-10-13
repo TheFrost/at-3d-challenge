@@ -1,0 +1,170 @@
+{
+	"UIL_graph_planet_mars-0": "{\"isOpen\":true,\"isFocused\":true,\"focusedLayer\":\"sl_planet_mars_0\",\"order\":[\"Config\",\"sl_planet_mars_0\"]}",
+	"INPUT_Config_0_planet_mars_renderOrder": 1,
+	"INPUT_scenelayout_planet_mars_data": "{\"layers\":0}",
+	"INPUT_Config_0_planet_mars_name": "planet",
+	"INPUT_Config_0_planet_mars_geometry": "World.SPHERE",
+	"INPUT_Config_0_planet_mars_shader": "PlanetShader",
+	"PlanetShader/PlanetShader/Element_0_planet_mars/_tx_tMap": "{\"src\":\"assets/images/planet/planet_diffuse.jpg\",\"relative\":\"planet\",\"prefix\":\"assets/images\",\"filename\":\"planet_diffuse.jpg\",\"compressed\":false}",
+	"PlanetShader/PlanetShader/Element_0_planet_mars/_tx_tNormal": "{\"src\":\"assets/images/planet/planet_normal.jpg\",\"relative\":\"planet\",\"prefix\":\"assets/images\",\"filename\":\"planet_normal.jpg\",\"compressed\":false}",
+	"UIL_graph_page_ui_heading_layout-0": "{\"isOpen\":true,\"isFocused\":true,\"focusedLayer\":\"sl_page_ui_heading_layout_0\",\"order\":[\"Config\",\"sl_page_ui_heading_layout_0\"]}",
+	"INPUT_Config_0_page_ui_heading_layout_renderOrder": 1,
+	"INPUT_scenelayout_page_ui_heading_layout_data": "{\"layers\":0}",
+	"INPUT_Config_0_page_ui_heading_layout_name": "text",
+	"INPUT_Config_0_page_ui_heading_layout_customClass": "Text3D",
+	"INPUT_Element_0_page_ui_heading_layout_text3d_text": "RED PLANET",
+	"INPUT_Element_0_page_ui_heading_layout_text3d_data": "{\"font\":\"Druk-CondSuper\",\"size\":1,\"color\":\"#eeefd2\",\"align\":\"center\",\"shader\":\"PageUIHeadingShader\"}",
+	"INPUT_Element_0_page_ui_heading_layout_text3d_fontStyle": "font: Druk-CondSuper\nsize: 1.0\ncolor: #eeefd2\nalign: center\nshader: PageUIHeadingShader",
+	"UIL_graph_page_layout-0": "{\"isOpen\":true,\"isFocused\":false,\"focusedLayer\":\"sl_page_layout_6\",\"order\":[\"Config\",\"sl_page_layout_0\",\"sl_page_layout_1\",\"sl_page_layout_2\",\"sl_page_layout_3\",\"sl_page_layout_6\"]}",
+	"INPUT_Config_0_page_layout_renderOrder": 1,
+	"INPUT_scenelayout_page_layout_data": "{\"layers\":6}",
+	"INPUT_Config_0_page_layout_name": "heading",
+	"INPUT_Config_0_page_layout_customClass": "PageUIHeading",
+	"UIL_graph_page_ui_heading_layout-1": "{\"isOpen\":true,\"isFocused\":false,\"order\":[]}",
+	"INPUT_Config_1_page_layout_renderOrder": 2,
+	"INPUT_Config_1_page_layout_name": "planet",
+	"INPUT_Config_1_page_layout_customClass": "Planet",
+	"INPUT_Config_1_page_layout_wildcard": "mars",
+	"UIL_graph_planet_mars-2": "{\"isOpen\":true,\"isFocused\":false,\"focusedLayer\":\"sl_planet_mars_0\",\"order\":[]}",
+	"MESH_Element_1_page_layoutposition": [
+		0,
+		0,
+		-1
+	],
+	"MESH_Element_1_page_layoutscale": [
+		1,
+		1,
+		1
+	],
+	"MESH_Element_1_page_layoutrotation": [
+		0,
+		0,
+		0
+	],
+	"INPUT_Config_2_page_layout_renderOrder": 3,
+	"INPUT_Config_2_page_layout_name": "camera",
+	"INPUT_Config_2_page_layout_customClass": "GazeCamera",
+	"CAMERA_Element_2_page_layoutposition": [
+		0,
+		0,
+		7
+	],
+	"UIL_graph_page_ui_button_layout-0": "{\"isOpen\":true,\"isFocused\":true,\"focusedLayer\":\"sl_page_ui_button_layout_0\",\"order\":[\"Config\",\"sl_page_ui_button_layout_0\",\"sl_page_ui_button_layout_1\"]}",
+	"INPUT_Config_0_page_ui_button_layout_renderOrder": 1,
+	"INPUT_scenelayout_page_ui_button_layout_data": "{\"layers\":1}",
+	"INPUT_Config_0_page_ui_button_layout_name": "text",
+	"INPUT_Config_0_page_ui_button_layout_customClass": "Text3D",
+	"INPUT_Element_0_page_ui_button_layout_text3d_text": "Explore surface",
+	"INPUT_Element_0_page_ui_button_layout_text3d_data": "{\"font\":\"myriad\",\"size\":0.07,\"color\":\"#eeefd2\",\"align\":\"center\",\"letterSpacing\":0.04,\"shader\":\"PageUIButtonTextShader\"}",
+	"INPUT_Element_0_page_ui_button_layout_text3d_fontStyle": "font: myriad\nsize: 0.07\ncolor: #eeefd2\nalign: center\nletterSpacing: 0.04\nshader: PageUIButtonTextShader",
+	"INPUT_Config_1_page_ui_button_layout_renderOrder": 2,
+	"INPUT_Config_1_page_ui_button_layout_name": "button",
+	"INPUT_Config_1_page_ui_button_layout_shader": "PageUIButtonShader",
+	"PageUIButtonShader/PageUIButtonShader/Element_1_page_ui_button_layout/_tx_tMap": "{\"src\":\"assets/images/ui/button.jpg\",\"relative\":\"ui\",\"prefix\":\"assets/images\",\"filename\":\"button.jpg\",\"compressed\":false}",
+	"INPUT_Config_1_page_ui_button_layout_transparent": "true",
+	"MESH_Element_1_page_ui_button_layoutposition": [
+		0,
+		0,
+		0
+	],
+	"MESH_Element_1_page_ui_button_layoutscale": [
+		1,
+		0.25,
+		1
+	],
+	"MESH_Element_1_page_ui_button_layoutrotation": [
+		0,
+		0,
+		0
+	],
+	"INPUT_Config_3_page_layout_renderOrder": 4,
+	"INPUT_Config_3_page_layout_name": "button",
+	"INPUT_Config_3_page_layout_customClass": "PageUIButton",
+	"INPUT_Element_0_page_ui_button_layout_text3d_renderRetina": "true",
+	"MESH_Element_3_page_layoutposition": [
+		0,
+		-0.55,
+		0
+	],
+	"MESH_Element_3_page_layoutscale": [
+		1,
+		1,
+		1
+	],
+	"MESH_Element_3_page_layoutrotation": [
+		0,
+		0,
+		0
+	],
+	"INPUT_Element_0_page_ui_heading_layout_text3d_renderRetina": "true",
+	"UIL_graph_page_ui_button_layout-3": "{\"isOpen\":true,\"isFocused\":false,\"order\":[]}",
+	"CAMERA_Element_2_page_layoutmoveXY": [
+		1,
+		1
+	],
+	"INPUT_Config_4_page_layout_renderOrder": 1,
+	"INPUT_Config_4_page_layout_name": "neptune",
+	"INPUT_Config_4_page_layout_shader": "",
+	"INPUT_Config_4_page_layout_customClass": "Planet",
+	"INPUT_Config_4_page_layout_wildcard": "neptune",
+	"UIL_graph_planet_neptune-4": "{\"isOpen\":true,\"isFocused\":false,\"order\":[\"Config\",\"sl_planet_neptune_0\"]}",
+	"INPUT_Config_0_planet_neptune_renderOrder": 1,
+	"INPUT_scenelayout_planet_neptune_data": "{\"layers\":0}",
+	"INPUT_Config_0_planet_neptune_name": "planet",
+	"INPUT_Config_0_planet_neptune_geometry": "World.SPHERE",
+	"INPUT_Config_0_planet_neptune_shader": "PlanetShader",
+	"PlanetShader/PlanetShader/Element_0_planet_neptune/_tx_tMap": "{\"src\":\"assets/images/planet/planet_diffuse.jpg\",\"relative\":\"planet\",\"prefix\":\"assets/images\",\"filename\":\"planet_diffuse.jpg\",\"compressed\":false}",
+	"PlanetShader/PlanetShader/Element_0_planet_neptune/_tx_tNormal": "{\"src\":\"assets/images/planet/planet_normal.jpg\",\"relative\":\"planet\",\"prefix\":\"assets/images\",\"filename\":\"planet_normal.jpg\",\"compressed\":false}",
+	"MESH_Element_0_planet_neptuneposition": [
+		-2.2,
+		0,
+		0
+	],
+	"MESH_Element_0_planet_neptunescale": [
+		1,
+		1,
+		1
+	],
+	"MESH_Element_0_planet_neptunerotation": [
+		0,
+		0,
+		0
+	],
+	"UIL_graph_asteroid_field_layout-0": "{\"isOpen\":true,\"isFocused\":true,\"focusedLayer\":\"sl_asteroid_field_layout_0\",\"order\":[\"Config\",\"sl_asteroid_field_layout_0\"]}",
+	"INPUT_Config_0_asteroid_field_layout_renderOrder": 1,
+	"INPUT_scenelayout_asteroid_field_layout_data": "{\"layers\":0}",
+	"INPUT_Config_0_asteroid_field_layout_name": "field",
+	"INPUT_Config_0_asteroid_field_layout_geometry": "asteroidfield",
+	"INPUT_Config_0_asteroid_field_layout_shader": "PlanetShader",
+	"PlanetShader/PlanetShader/Element_0_asteroid_field_layout/_tx_tMap": "{\"src\":\"assets/images/planet/planet_diffuse.jpg\",\"relative\":\"planet\",\"prefix\":\"assets/images\",\"filename\":\"planet_diffuse.jpg\",\"compressed\":false}",
+	"PlanetShader/PlanetShader/Element_0_asteroid_field_layout/_tx_tNormal": "{\"src\":\"assets/images/planet/planet_normal.jpg\",\"relative\":\"planet\",\"prefix\":\"assets/images\",\"filename\":\"planet_normal.jpg\",\"compressed\":false}",
+	"sl_page_layout_5_deleted": true,
+	"sl_page_layout_4_deleted": true,
+	"INPUT_Config_6_page_layout_renderOrder": 5,
+	"INPUT_Config_6_page_layout_name": "asteroids",
+	"INPUT_Config_6_page_layout_customClass": "AsteroidField",
+	"UIL_graph_asteroid_field_layout-4": "{\"isOpen\":true,\"isFocused\":true,\"focusedLayer\":\"sl_asteroid_field_layout_0\",\"order\":[]}",
+	"MESH_Element_6_page_layoutposition": [
+		0,
+		0,
+		-1
+	],
+	"MESH_Element_6_page_layoutscale": [
+		0.02,
+		0.02,
+		0.02
+	],
+	"MESH_Element_6_page_layoutrotation": [
+		23,
+		182,
+		-28
+	],
+	"PlanetShader/PlanetShader/Element_0_asteroid_field_layout/uSpecRange": 7.5,
+	"PlanetShader/PlanetShader/Element_0_asteroid_field_layout/uScale": 0,
+	"PlanetShader/PlanetShader/Element_0_asteroid_field_layout/uBias": 0.55,
+	"PlanetShader/PlanetShader/Element_0_asteroid_field_layout/uSpecIntensity": 0.1,
+	"INPUT_Config_1_page_layout_transparent": "false",
+	"INPUT_Config_0_planet_mars_transparent": "true",
+	"INPUT_Config_6_page_layout_transparent": "false",
+	"INPUT_Config_0_asteroid_field_layout_transparent": "true"
+}

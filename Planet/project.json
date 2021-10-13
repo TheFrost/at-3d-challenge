@@ -1,0 +1,23 @@
+{
+    "modules": [
+        "engine3d",
+        "fullscreen",
+        "accelerometer",
+        "shaders",
+        "rendermanager",
+        "uil",
+        "fxaa",
+        "gpu",
+        "glui",
+        "scenelayout",
+        "performance",
+        "uiltools"
+    ],
+
+    "gl": [
+        "range",
+        "conditionals",
+        "normalmap",
+        "simplenoise"
+    ]
+}

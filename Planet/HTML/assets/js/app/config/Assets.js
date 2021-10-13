@@ -1,0 +1,2 @@
+window.ASSETS = ["assets/data/uil.json","assets/shaders/compiled.vs"];
+ASSETS.SW = ["assets/fonts/Druk-CondSuper.json","assets/fonts/Druk-CondSuper.otf","assets/fonts/Druk-CondSuper.png","assets/fonts/myriad.json","assets/fonts/myriad.otf","assets/fonts/myriad.png","assets/css/style.css","assets/js/app.js"];
