@@ -15,6 +15,7 @@ uniform float uSpecRange;
 uniform vec3 uSpecColor;
 uniform float uDiffIntensity;
 uniform vec3 uDiffColor;
+uniform float uOpacity;
 
 #!VARYINGS
 varying vec2 vUv;
@@ -54,5 +55,5 @@ void main() {
     vec3 color = texture * vec3(diff * uDiffIntensity * uDiffColor + spec * uSpecIntensity * uSpecColor + fresnel * uFresnelColor);
 
     gl_FragColor.rgb = color;
-    gl_FragColor.a = 1.0;
+    gl_FragColor.a = uOpacity;
 }

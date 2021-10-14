@@ -11,6 +11,7 @@ Class(function Page() {
     initCamera();
     addHandlers();
     _this.startRender(loop);
+    animateIn();
   })();
 
   async function init () {
@@ -22,11 +23,25 @@ Class(function Page() {
     _heading = layers.heading;
     _button = layers.button;
     _camera = layers.camera;
+
+    await _planet.ready();
+    await _asteroids.ready();
+    await _heading.ready();
+    await _button.ready();
   }
 
   function initCamera () {
     _cameraOrigin = _camera.group.position.clone();
     _camera.lock();
+  }
+
+  async function animateIn () {
+    _planet.animateIn(5000);
+    _asteroids.animateIn(5000);
+    await _this.wait(3000);
+    _heading.animateIn(2000);
+    await _this.wait(1000);
+    _button.animateIn(2000);
   }
   
   //*** Event handlers

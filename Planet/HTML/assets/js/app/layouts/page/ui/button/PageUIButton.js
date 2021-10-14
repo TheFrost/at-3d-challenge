@@ -6,11 +6,13 @@ Class(function PageUIButton(_input) {
   
   //*** Constructor
   (async function () {
-    await initUI()
-    initShaders()
-    addHandlers()
-
+    await initUI();
+    initShaders();
     _this.startRender(loop);
+    _this.flag('loaded', true);
+
+    await _this.wait('readyToInteract');
+    addHandlers();
   })();
 
   async function initUI () {
@@ -18,7 +20,10 @@ Class(function PageUIButton(_input) {
     const layers = await layout.getAllLayers();
 
     _button = layers.button;
+    _button.position.z = 0.25;
+
     _text = layers.text;
+    _text.group.position.z = 0.25;
 
     await _text.ready();
   }
@@ -63,14 +68,12 @@ Class(function PageUIButton(_input) {
   }
 
   function handlerOver () {
-    console.log('over')
     _this.flag('isOver', true);
     _text.shader.tween('uColorTransition', 1.0, 250);
     _this.events.fire(PageUIButton.OVER);
   }
 
   function handlerOut () {
-    console.log('out')
     _this.flag('isOver', false);
     _text.shader.tween('uColorTransition', 0.0, 250);
     _this.events.fire(PageUIButton.OUT);
@@ -81,6 +84,18 @@ Class(function PageUIButton(_input) {
   }
   
   //*** Public methods
+  this.animateIn = (_time = 2000, _ease = 'easeInOutCubic') => {
+    _button.shader.tween('uOpacity', 1.0, _time, _ease);
+    tween(_button.position, { z: 0 }, _time, _ease);
+
+    _text.shader.tween('uOpacity', 1.0, _time, _ease);
+    tween(_text.group.position, { z: 0 }, _time, _ease)
+      .onComplete(() => {
+        _this.flag('readyToInteract', true);
+      });
+  }
+
+  this.ready = () => this.wait('loaded')
   
 }, _ => {
   PageUIButton.OVER = 'pageuibuttonover';

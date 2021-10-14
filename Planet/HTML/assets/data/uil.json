@@ -15,7 +15,7 @@
 	"INPUT_Element_0_page_ui_heading_layout_text3d_text": "RED PLANET",
 	"INPUT_Element_0_page_ui_heading_layout_text3d_data": "{\"font\":\"Druk-CondSuper\",\"size\":1,\"color\":\"#eeefd2\",\"align\":\"center\",\"shader\":\"PageUIHeadingShader\"}",
 	"INPUT_Element_0_page_ui_heading_layout_text3d_fontStyle": "font: Druk-CondSuper\nsize: 1.0\ncolor: #eeefd2\nalign: center\nshader: PageUIHeadingShader",
-	"UIL_graph_page_layout-0": "{\"isOpen\":true,\"isFocused\":false,\"focusedLayer\":\"sl_page_layout_6\",\"order\":[\"Config\",\"sl_page_layout_0\",\"sl_page_layout_1\",\"sl_page_layout_2\",\"sl_page_layout_3\",\"sl_page_layout_6\"]}",
+	"UIL_graph_page_layout-0": "{\"isOpen\":true,\"isFocused\":true,\"focusedLayer\":\"sl_page_layout_1\",\"order\":[\"Config\",\"sl_page_layout_0\",\"sl_page_layout_1\",\"sl_page_layout_2\",\"sl_page_layout_3\",\"sl_page_layout_6\"]}",
 	"INPUT_Config_0_page_layout_renderOrder": 1,
 	"INPUT_scenelayout_page_layout_data": "{\"layers\":6}",
 	"INPUT_Config_0_page_layout_name": "heading",
@@ -25,7 +25,7 @@
 	"INPUT_Config_1_page_layout_name": "planet",
 	"INPUT_Config_1_page_layout_customClass": "Planet",
 	"INPUT_Config_1_page_layout_wildcard": "mars",
-	"UIL_graph_planet_mars-2": "{\"isOpen\":true,\"isFocused\":false,\"focusedLayer\":\"sl_planet_mars_0\",\"order\":[]}",
+	"UIL_graph_planet_mars-2": "{\"isOpen\":true,\"isFocused\":false,\"order\":[]}",
 	"MESH_Element_1_page_layoutposition": [
 		0,
 		0,
@@ -143,7 +143,7 @@
 	"INPUT_Config_6_page_layout_renderOrder": 5,
 	"INPUT_Config_6_page_layout_name": "asteroids",
 	"INPUT_Config_6_page_layout_customClass": "AsteroidField",
-	"UIL_graph_asteroid_field_layout-4": "{\"isOpen\":true,\"isFocused\":true,\"focusedLayer\":\"sl_asteroid_field_layout_0\",\"order\":[]}",
+	"UIL_graph_asteroid_field_layout-4": "{\"isOpen\":true,\"isFocused\":false,\"focusedLayer\":\"sl_asteroid_field_layout_0\",\"order\":[]}",
 	"MESH_Element_6_page_layoutposition": [
 		0,
 		0,

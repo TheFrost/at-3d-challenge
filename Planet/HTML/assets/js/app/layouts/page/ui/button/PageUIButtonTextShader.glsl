@@ -8,6 +8,7 @@ uniform vec3 uColor2;
 uniform float uColorTransition;
 uniform vec3 uBoundingMax;
 uniform vec3 uBoundingMin;
+uniform float uOpacity;
 
 #!VARYINGS
 varying vec2 vUv;
@@ -34,5 +35,5 @@ void main() {
 
     vec3 color = mix(uColor1, uColor2, uColorTransition);
     gl_FragColor.rgb = color;
-    gl_FragColor.a = fill * horizontalTransition;
+    gl_FragColor.a = fill * horizontalTransition * uOpacity;
 }

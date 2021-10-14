@@ -7,6 +7,7 @@ uniform float uVerticalTransition;
 uniform float uHorizontalTransition;
 uniform vec3 uBoundingMax;
 uniform vec3 uBoundingMin;
+uniform float uOpacity;
 
 #!VARYINGS
 varying vec2 vUv;
@@ -42,5 +43,5 @@ void main() {
 
     vec3 color = uColor;
     gl_FragColor.rgb = color;
-    gl_FragColor.a = max(fill, outline) * horizontalTransition;
+    gl_FragColor.a = max(fill, outline) * horizontalTransition * uOpacity;
 }

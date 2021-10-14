@@ -19,8 +19,8 @@ Class(function PlanetShader(_mesh, _shader, _group, _input) {
             uSpecRange: {value: 12},
             uSpecColor: {value: new Color('#ffffff')},
             uDiffIntensity: {value: 0.4},
-            uDiffColor: {value: new Color('#ffc9b2')}
-            
+            uDiffColor: {value: new Color('#ffc9b2')},
+            uOpacity: { value: 1 }
         });
     })();
 

@@ -9,14 +9,15 @@ Class(function PageUIHeading() {
     await initScene();
     initShaders();
     addHandlers();
-
     _this.startRender(loop);
+    _this.flag('loaded', true);
   })();
 
   async function initScene () {
     const layout = _this.initClass(SceneLayout, 'page_ui_heading_layout');
     const layers = await layout.getAllLayers();
     _heading = layers.text;
+    _heading.group.position.z = 0.25;
 
     await _heading.ready();
   }
@@ -52,5 +53,10 @@ Class(function PageUIHeading() {
   }
   
   //*** Public methods
-  
+  this.animateIn = (_time = 2000, _ease = 'easeInOutCubic') => {
+    _heading.shader.tween('uOpacity', 1.0, _time, _ease);
+    tween(_heading.group.position, { z: 0 }, _time, _ease);
+  }
+
+  this.ready = () => this.wait('loaded')
 });

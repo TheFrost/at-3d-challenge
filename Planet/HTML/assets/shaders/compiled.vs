@@ -1193,6 +1193,7 @@ uniform float uSpecRange;
 uniform vec3 uSpecColor;
 uniform float uDiffIntensity;
 uniform vec3 uDiffColor;
+uniform float uOpacity;
 
 #!VARYINGS
 varying vec2 vUv;
@@ -1232,7 +1233,7 @@ void main() {
     vec3 color = texture * vec3(diff * uDiffIntensity * uDiffColor + spec * uSpecIntensity * uSpecColor + fresnel * uFresnelColor);
 
     gl_FragColor.rgb = color;
-    gl_FragColor.a = 1.0;
+    gl_FragColor.a = uOpacity;
 }{@}PageUIButtonShader.glsl{@}#!ATTRIBUTES
 
 #!UNIFORMS
@@ -1242,6 +1243,7 @@ uniform vec3 uTextColor1;
 uniform vec3 uTextColor2;
 uniform float uVerticalTransition;
 uniform float uOutlineTransition;
+uniform float uOpacity;
 
 #!VARYINGS
 varying vec2 vUv;
@@ -1268,7 +1270,7 @@ void main() {
     float fillMask = texture.g * smoothstep(transition- 0.01, transition + 0.01, y);
 
     gl_FragColor.rgb = uButtonColor;
-    gl_FragColor.a = max(outlineMask, fillMask);
+    gl_FragColor.a = max(outlineMask, fillMask) * uOpacity;
 }{@}PageUIButtonTextShader.glsl{@}#!ATTRIBUTES
 
 #!UNIFORMS
@@ -1279,6 +1281,7 @@ uniform vec3 uColor2;
 uniform float uColorTransition;
 uniform vec3 uBoundingMax;
 uniform vec3 uBoundingMin;
+uniform float uOpacity;
 
 #!VARYINGS
 varying vec2 vUv;
@@ -1305,7 +1308,7 @@ void main() {
 
     vec3 color = mix(uColor1, uColor2, uColorTransition);
     gl_FragColor.rgb = color;
-    gl_FragColor.a = fill * horizontalTransition;
+    gl_FragColor.a = fill * horizontalTransition * uOpacity;
 }{@}PageUIHeadingShader.glsl{@}#!ATTRIBUTES
 
 #!UNIFORMS
@@ -1315,6 +1318,7 @@ uniform float uVerticalTransition;
 uniform float uHorizontalTransition;
 uniform vec3 uBoundingMax;
 uniform vec3 uBoundingMin;
+uniform float uOpacity;
 
 #!VARYINGS
 varying vec2 vUv;
@@ -1350,5 +1354,5 @@ void main() {
 
     vec3 color = uColor;
     gl_FragColor.rgb = color;
-    gl_FragColor.a = max(fill, outline) * horizontalTransition;
+    gl_FragColor.a = max(fill, outline) * horizontalTransition * uOpacity;
 }

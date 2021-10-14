@@ -7,6 +7,7 @@ uniform vec3 uTextColor1;
 uniform vec3 uTextColor2;
 uniform float uVerticalTransition;
 uniform float uOutlineTransition;
+uniform float uOpacity;
 
 #!VARYINGS
 varying vec2 vUv;
@@ -33,5 +34,5 @@ void main() {
     float fillMask = texture.g * smoothstep(transition- 0.01, transition + 0.01, y);
 
     gl_FragColor.rgb = uButtonColor;
-    gl_FragColor.a = max(outlineMask, fillMask);
+    gl_FragColor.a = max(outlineMask, fillMask) * uOpacity;
 }
